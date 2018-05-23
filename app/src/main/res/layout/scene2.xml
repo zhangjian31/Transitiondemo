@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_scene"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="#500f6f"
+    tools:context="plug.zj.com.transitiondemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_c"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/c"
+        android:rotation="180"
+        android:text="Hello World!" />
+
+    <ImageView
+        android:id="@+id/image_a"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/a"
+        android:rotation="180"
+        android:text="Hello World!" />
+
+    <ImageView
+        android:id="@+id/image_b"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/b"
+        android:rotation="180"
+        android:text="Hello World!" />
+</RelativeLayout>
