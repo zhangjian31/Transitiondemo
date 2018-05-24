@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import plug.zj.com.transitiondemo.list.ListTrasitionActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,7 +16,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,SimpleTransitionActivity.class));
+                startActivity(new Intent(MainActivity.this, SimpleTransitionActivity.class));
+            }
+        });
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ListTrasitionActivity.class));
             }
         });
     }

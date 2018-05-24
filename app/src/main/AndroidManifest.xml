@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SimpleTransitionActivity"/>
+        <activity android:name=".SimpleTransitionActivity" />
+        <activity android:name=".list.ListTrasitionActivity" />
+        <activity android:name=".list.MessageActivity"/>
     </application>
 
 </manifest>
