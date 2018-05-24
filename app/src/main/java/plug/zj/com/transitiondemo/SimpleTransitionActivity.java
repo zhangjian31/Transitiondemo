@@ -31,7 +31,7 @@ public class SimpleTransitionActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                transition5();
+                customTransition();
             }
         }, 1000);
 
@@ -91,7 +91,7 @@ public class SimpleTransitionActivity extends AppCompatActivity {
     }
 
 
-    private void transition5() {
+    private void customTransition() {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             Scene scene = new Scene(rootView, LayoutInflater.from(this).inflate(R.layout.scene2, null));
             ChangeColorTransition changeColorTransition = new ChangeColorTransition();
